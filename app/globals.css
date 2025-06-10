@@ -1,26 +1,62 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.dark .btn-header:hover {
+  background-color: hsl(226, 11%, 37%) !important;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.light .btn-header:hover {
+  background-color: hsl(0, 0%, 78%) !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+
+ .btn-header:focus-within ,.remove-btn:focus-within  {
+  border: 2px solid hsl(3, 71%, 56%) !important;
+
+}
+ .active-click:focus-within , .inactive-click:focus-within ,.active-list:focus-within , .inactive-list:focus-within  {
+  outline: 2px solid hsl(3, 71%, 56%) !important;
+  outline-offset: 2px !important;
+
+}
+/* ------------------------------------------------- */
+
+.dark .remove-btn:hover {
+  background-color: hsl(3, 86%, 64%) !important;
+  color: hsl(226, 25%, 17%) !important;
+  border: none;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.light .remove-btn:hover {
+  background-color: hsl(3, 77%, 44%) !important;
+  color: hsl(0, 0%, 93%) !important;
+  border: none;
 }
+
+.dark .active-click:hover,
+.light .active-click:hover {
+  background-color: hsl(3, 71%, 56%) !important;
+}
+
+.dark .inactive-click:hover {
+  background-color: hsl(226, 11%, 37%) !important;
+}
+
+.light .inactive-click:hover {
+  background-color: hsl(0, 0%, 78%) !important;
+}
+
+.light .inactive-list:hover {
+  background-color: hsl(0, 0%, 93%) !important;
+}
+
+.dark .inactive-list:hover {
+  background-color: hsl(226, 11%, 37%) !important;
+}
+
+.dark .active-list:hover,
+.light .active-list:hover {
+  background-color: hsl(3, 71%, 56%) !important;
+}
+
+
