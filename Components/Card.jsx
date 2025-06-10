@@ -1,6 +1,6 @@
 "use client";
 
-import useTheme from "../Hooks/UseTheme";
+import useTheme from "../Hooks/useTheme";
 import Image from "next/image";
 import { useState, useMemo } from "react";
 
