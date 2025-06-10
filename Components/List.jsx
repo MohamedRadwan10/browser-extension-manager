@@ -3,7 +3,7 @@ import { useMemo, useState } from "react";
 import Card from "@/Components/Card";
 import data from "../data";
 import FilterButton from "./FilterButton";
-import useTheme from "@/Hooks/UseTheme";
+import useTheme from "../Hooks/useTheme";
 
 const List = () => {
   const [activeFilter, setActiveFilter] = useState("all");

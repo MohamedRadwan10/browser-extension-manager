@@ -1,7 +1,7 @@
 "use client";
 import Header from "@/Components/Header";
 import List from "@/Components/List";
-import useTheme from "@/Hooks/UseTheme";
+import useTheme from "../Hooks/useTheme";
 
 const Page = () => {
   const { darkMode } = useTheme();

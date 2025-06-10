@@ -1,6 +1,6 @@
 "use client";
 
-import useTheme from "@/Hooks/UseTheme";
+import useTheme from "../Hooks/useTheme";
 
 export const FilterButton = ({ active, label, currentFilter, onClick }) => {
   const { darkMode } = useTheme();
